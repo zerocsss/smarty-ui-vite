@@ -11,8 +11,8 @@ jobs:
     name: "publish npm"
 
     environment: npm
-
-steps:
+    
+    steps:
       - uses: actions/checkout@master
       - uses: pnpm/action-setup@v2.1.0
         with:
