@@ -11,7 +11,7 @@ jobs:
     name: "publish npm"
 
     environment: npm
-    
+
     steps:
       - uses: actions/checkout@master
       - uses: pnpm/action-setup@v2.1.0
@@ -27,5 +27,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM }} # 跟前面步骤中的 NPM_AUTH_TOKEN 保持一致
         with:
-          default_branch: "publish"
+          default_branch: "main"
           dir: "smarty-ui-vite"
