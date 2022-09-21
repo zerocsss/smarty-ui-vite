@@ -29,3 +29,4 @@ jobs:
         with:
           default_branch: "main"
           dir: "."
+          registry-url: https://registry.npmjs.org/  # 设置发包npm地址仓库
