@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig, UserConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 
@@ -16,7 +16,7 @@ const rollupOptions = {
   },
 };
 
-export default defineConfig({
+export const config = {
   plugins: [
     vue(),
     // 添加JSX插件
@@ -39,6 +39,7 @@ export default defineConfig({
       // 导出模块格式
       formats: ["es", "umd", "iife"],
     },
+    outDir: "./dist",
   },
   test: {
     // enable jest-like global test APIs
@@ -51,4 +52,6 @@ export default defineConfig({
       web: [/.[tj]sx$/],
     },
   },
-});
+};
+
+export default defineConfig(config as UserConfig);
