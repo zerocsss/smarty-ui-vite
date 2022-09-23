@@ -18,7 +18,7 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Lint
-        run: pnpm run lint
+        run: cd packages/nlbn-ui-vite && pnpm run lint
   UnitTest:
     # 单元测试任务
     runs-on: ubuntu-latest
@@ -31,4 +31,4 @@ jobs:
      - name: Install modules
        run: pnpm install
      - name: Run Lint
-       run: pnpm run test:run
+       run: cd packages/nlbn-ui-vite && pnpm run test:run
