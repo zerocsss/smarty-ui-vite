@@ -14,8 +14,7 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "lint": "eslint --fix --ext .ts,.vue src",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-    "prepare": "husky install"
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\""
   },
   "author": "cs",
   "license": "MIT",
