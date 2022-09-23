@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "description": "基于Vite的组件库",
   "main": "index.js",
+  "homepage": "https://smarty-ui-vite-2nk3.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "pnpm build:components",
@@ -10,6 +11,7 @@
     "build:components": "esno ./scripts/build.ts",
     "test": "vitest",
     "test:run": "vitest run",
+    "coverage": "vitest run --coverage",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
